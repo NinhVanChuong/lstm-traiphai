@@ -89,7 +89,6 @@ while True:
                 t1 = threading.Thread(target=detect, args=(model, lm_list,))
                 t1.start()
                 lm_list = []
-
             img = draw_landmark_on_image(mpDraw, results, img)
 
     img = draw_class_on_image(label, img)
